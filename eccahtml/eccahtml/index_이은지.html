@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+
+
+<html>
+<head>
+    <title>대학e스포츠동아리연합회 ECCA</title>
+    <style>
+        html, body{margin:10px; padding:0; height:100%;}
+        #menu {
+            display: inline-block;
+            float: left;
+            padding: 20px;
+            background: royalblue;
+            color: white;
+            height: 100%;
+            width: 20%;
+            font: bold 1.6em "맑은 고딕", sans-serif;
+            line-height: 170%;
+            text-align: right;
+        }
+
+        dl dt:hover, #menu a:hover{
+            color:yellow;
+            cursor:pointer;
+        }
+
+        dl dt dl {
+            display: none;
+            margin: 0px;
+            height: auto;
+            font: 0.8em "맑은 고딕", sans-serif;
+            color : white;
+        }
+
+        dl dt:hover dl{
+            display:block;
+        }
+
+        dl dt:hover dl dt{
+            text-align:right;
+        }
+
+
+        #menu  a {
+            color: white;
+            text-decoration : none;
+        }
+
+        #main {
+            display: inline-block;
+            position: relative;
+            margin: 10px;
+            width: 75%;
+            height: auto;
+            font: 1em "맑은 고딕", sans-serif;
+            text-align: center;
+        }
+
+        #introduce{
+            font:1.2em "맑은 고딕", sans-serif;
+            text-align:left;
+            padding-top:100px;
+            padding-left:50px;
+            line-height:30px;
+        }
+
+        @keyframes ImgAnimationOut{
+            0% {opacity: 1;}
+            25% {opacity: 0.9;}
+            50% {opacity: 0;
+            }
+            75% {opacity: 0;}
+            100% {opacity: 1;
+            }
+
+        }
+
+        #imgout {
+            animation-name: ImgAnimationOut;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        div.banner {
+            display: inline-block;
+            position: fixed;
+            padding: 20px;
+            top: 250px;
+            right: 15px;
+            width: 100px;
+            border: 10px groove skyblue;
+            text-align:center;
+            background: antiquewhite;
+            border-radius: 0px 50px;
+            font: 1em "맑은 고딕", sans-serif;
+        }
+    </style>
+    <title></title>
+
+</head>
+
+<body>
+
+    <nav id=menu>
+        <dl>
+        <a href="index_이은지.html">
+            <img src="https://scontent-icn1-1.xx.fbcdn.net/v/t1.0-1/p200x200/15740977_584680865064580_8918013987673880064_n.png?_nc_cat=101&oh=9b60cc2dfd95178f0c669dd8a7ef5c64&oe=5C197CD2"
+                 width="200" height="150" alt="ecca">
+        </a>
+            <dt><a href="login.html">로그인</a></dt>
+            <dt><a href="./intro-club.html">소개</a>
+            <dl>
+                <dt><a href="./intro-club.html">동아리소개</a></dt>
+                <dt><a href="./intro-act.html">홍보자료</a></dt></dl>
+            </dt>
+            <dt><a href="./game.html">게임</a></dt>
+            <dt><a href="./sns.html">SNS</a></dt>
+            <dt><a href="./media.html">게임소식</a></dt>
+            <dt><a href="mailto:esportscca@gmail.com">문의</a></dt>
+        </dl>
+    </nav>
+
+    <section id="main">
+        <div style="height:500px">
+    <img style="position:absolute; left:100px; top:50px;" src="./image/overwatch.jpg" alt="오버워치" width="750" height="450" /><br />
+    <img style="position:absolute; left:100px; top:50px;" id="imgout" src="./image/lol.jpg" alt="리그오브레전드" width="750" height="450" /><br />
+            </div>
+        <strong style="text-align:left">대학생e스포츠연합동아리 ecca</strong><br />
+        <div id="introduce">
+        한국은 <strong style="color:saddlebrown">e스포츠</strong> 가장 먼저 발전시킨 종주국임에도 불구하고, 현재 게임에 대한 부정적인 인식과 사회적인 편견 때문에 많은 어려움을 겪고 있습니다.<br />
+    게임은 요즘 세대들이 가장 많은 시간을 보내는 취미 생활이고, 이제는 아이들의 놀이를 넘어서서 <br />모든 세대가 즐길 수 있는 차세대 여가 생활임에도 불구하고,
+    아직 사회적으로 규탄 받고 있는 것이 안타까울 따름입니다.<br /><br />
+
+    한국의 e스포츠가 대중에게 사랑받고 인정받는 문화가 되기 위해서는 이제 프로 시장뿐만 아니라 아마추어들도 힘을 합쳐야 한다고 생각합니다.<br />
+    특히 앞으로 사회를 이끌어나갈 사회의 지성이자, 게임의 주된 소비층 중 하나인 대학생들이 앞장서서 <br />아마추어들의 문화를 가꾸어 나가야 한다고 생각합니다.<br /><br />
+
+    앞으로 한국의 e스포츠 문화가 더욱 발전 할 수 있도록 <strong style="color:royalblue">ECCA</strong>에서 앞장서도록 하겠습니다.
+</div>
+
+
+    </section>
+    <div class="banner">배틀그라운드 프로지향팀 Team Ecca<br />출범!</div>
+
+
+
+</body>
+
+</html>

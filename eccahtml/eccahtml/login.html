@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>대학e스포츠동아리연합회 ECCA - 로그인</title>
+    <style>
+        html, body {
+            margin: 10px;
+            padding: 0;
+            height: 100%;
+        }
+
+        #menu {
+            display: inline-block;
+            float: left;
+            padding: 20px;
+            background: royalblue;
+            color: white;
+            height: 100%;
+            width: 20%;
+            font: bold 1.6em "맑은 고딕", sans-serif;
+            line-height: 170%;
+            text-align: right;
+        }
+
+            dl dt:hover, #menu a:hover {
+                color: yellow;
+                cursor: pointer;
+            }
+
+        dl dt dl {
+            display: none;
+            margin: 0px;
+            height: auto;
+            font: 0.8em "맑은 고딕", sans-serif;
+            color: white;
+        }
+
+        dl dt:hover dl {
+            display: block;
+        }
+
+            dl dt:hover dl dt {
+                text-align: right;
+            }
+
+
+        #menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #main {
+            display: inline-block;
+            float: left;
+            margin:20px;
+            width: 70%;
+            height: auto;
+            font: 1em "맑은 고딕", sans-serif;
+            text-align: center;
+        }
+
+        fieldset {
+            border: 20px solid midnightblue;
+            border-image: url("bg.jpg") 100 round;
+            background: cornsilk;
+            color:
+        }
+
+        form {
+            background: cornsilk;
+            line-height:30px;
+        }
+        legend {
+            width: 100px;
+            height: 50px;
+            background: midnightblue;
+            border: 3px solid cornsilk;
+            color: white;
+            text-align: center;
+            line-height:40px;
+        }
+
+        div.banner {
+            display: inline-block;
+            position: fixed;
+            padding: 20px;
+            bottom: 300px;
+            right: 15px;
+            width: 100px;
+            background: yellow;
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+    <nav id=menu>
+        <dl>
+            <a href="index_이은지.html">
+                <img src="https://scontent-icn1-1.xx.fbcdn.net/v/t1.0-1/p200x200/15740977_584680865064580_8918013987673880064_n.png?_nc_cat=101&oh=9b60cc2dfd95178f0c669dd8a7ef5c64&oe=5C197CD2"
+                     width="200" height="150" alt="ecca">
+            </a>
+            <dt><a style="color:yellow; font-weight:bold" href="login.html">로그인</a></dt>
+            <dt>
+                <a href="./intro-club.html">소개</a>
+                <dl>
+                    <dt><a href="./intro-club.html">동아리소개</a></dt>
+                    <dt><a href="./intro-act.html">홍보자료</a></dt>
+                </dl>
+            </dt>
+            <dt><a href="./game.html">게임</a></dt>
+            <dt><a href="./sns.html">SNS</a></dt>
+            <dt><a href="./media.html">게임소식</a></dt>
+            <dt><a href="mailto:esportscca@gmail.com">문의</a></dt>
+        </dl>
+    </nav>
+
+    <section id="main">
+        <h2>로그인</h2><hr /><br />
+        <form style="width:400px; margin:0 auto;">
+            <fieldset>
+                <legend>로그인</legend>
+                아이디<br /><input type="text" autofocus /><br />
+                비밀번호<br /><input type="password" /><br />
+                <button type="submit">로그인</button>
+            </fieldset>
+        </form><br /><br />
+
+        <form style="width:400px; margin:0 auto;">
+            <fieldset>
+                <legend>회원가입</legend>
+                아이디  <input type="text" required /><br />
+                비밀번호  <input type="password" required /><br />
+                좋아하는 장르<br />
+                <input type="checkbox" name="game" value="rpg" />RPG
+                <input type="checkbox" name="game" value="fps" />FPS
+                <input type="checkbox" name="game" value="aos" />AOS<br />
+                <label>
+                소속 대학<br />
+                <input type="text" list="college" required />
+                <datalist id="college">
+                <option value="가톨릭대"></option>
+                <option value="서울대"></option>
+                <option value="카이스트"></option></datalist><br />
+                    </label>
+                <button type="submit">가입</button>
+            </fieldset>
+        </form>
+    </section>
+
+</body>
+</html>
